@@ -89,16 +89,18 @@ export default ({ showSteps, query = "" }: { showSteps: boolean; query: string }
 
             <div className="flex py-4 w-full flex-col min-h-screen">
                 {showSteps && (
-                    <a href="https://chat.openai.com">
+                    <a href="https://chat.openai.com" target="_blank">
                         <div className="flex flex-col justify-center items-center mb-6">
-                            Step 1: Go on chat.openai.com<img className="h-10 mt-4" src="/img/url.png"></img>
+                            <b>Step 1:</b> Go on chat.openai.com<img className="h-10 mt-4" src="/img/url.png"></img>
                         </div>
                     </a>
                 )}
 
                 <div className="flex flex-col justify-center items-center ">
                     {showSteps && (
-                        <div className="flex flex-col justify-center items-center">Step 2: Ask your question</div>
+                        <div className="flex flex-col justify-center items-center">
+                            <b>Step 2:</b> Ask your question
+                        </div>
                     )}
                     <a href="https://chat.openai.com" target="_blank">
                         <div className="shadow-2xl rounded-2xl overflow-hidden max-w-3xl -mt-16 scale-75">
@@ -143,13 +145,13 @@ export default ({ showSteps, query = "" }: { showSteps: boolean; query: string }
                                                             Examples
                                                         </h2>
                                                         <ul className="flex flex-col gap-3.5 w-full sm:max-w-md m-auto">
-                                                            <button className="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900">
+                                                            <button className="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md ">
                                                                 "Explain quantum computing in simple terms" →
                                                             </button>
-                                                            <button className="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900">
+                                                            <button className="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md ">
                                                                 "Got any creative ideas for a 10 year old’s birthday?" →
                                                             </button>
-                                                            <button className="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-900">
+                                                            <button className="w-full bg-gray-50 dark:bg-white/5 p-3 rounded-md ">
                                                                 "How do I make an HTTP request in Javascript?" →
                                                             </button>
                                                         </ul>
