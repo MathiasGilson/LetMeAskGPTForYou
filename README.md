@@ -13,7 +13,7 @@ and insert your query then generate the link and send it to your friend
 ![Demo GIF](demo.gif)
 
 
-As an wise man said one day: 
+## Final quote
 
 ```
 If you give a man a fish, you feed him for a day. If you teach a man to fish, you feed him for a lifetime.
