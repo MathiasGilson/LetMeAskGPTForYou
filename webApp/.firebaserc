@@ -1,0 +1,15 @@
+{
+    "projects": {
+        "gpt-drive-plugin": "lmagptfy",
+        "default": "lmagptfy"
+    },
+    "targets": {
+        "lmagptfy": {
+            "hosting": {
+                "webapp": [
+                    "lmagptfy"
+                ]
+            }
+        }
+    }
+}

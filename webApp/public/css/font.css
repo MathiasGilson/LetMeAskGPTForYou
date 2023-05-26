@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Google Sans";
+    src: url("/fonts/normal.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Google Sans";
+    src: url("/fonts/bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}

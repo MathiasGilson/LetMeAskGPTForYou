@@ -1,0 +1,7 @@
+{
+    "hosting": {
+        "target": "webapp",
+        "public": "dist",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "*.DS_Store"]
+    }
+}
