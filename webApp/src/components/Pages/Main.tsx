@@ -32,15 +32,13 @@ export default () => {
                                         name="link"
                                         id="link"
                                         className="block w-full rounded-none rounded-l-md border-0 px-2 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                        value={`https://lmagptfy.com/q/?query=${query.replace(/ /g, "%20")}`}
+                                        value={`https://lmagptfy.com/q/?query=${btoa(query)}`}
                                     />
                                 </div>
                                 <button
                                     type="button"
                                     onClick={() => {
-                                        navigator.clipboard.writeText(
-                                            `https://lmagptfy.com/q/?query=${query.replace(/ /g, "%20")}`
-                                        )
+                                        navigator.clipboard.writeText(`https://lmagptfy.com/q/?query=${btoa(query)}`)
                                         setCopied(true)
                                     }}
                                     className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
