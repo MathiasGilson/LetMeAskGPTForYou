@@ -10,7 +10,7 @@ The link will teach them step by step how to use ChatGPT so that they can stop w
 
 and insert your query then generate the link and send it to your friend
 
-![Demo GIF](demo.gif)
+![Demo GIF](LetMeAskGPTForYou-demo.gif)
 
 
 ## Final quote
