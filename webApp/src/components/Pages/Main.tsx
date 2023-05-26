@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 
-import { CheckCircleIcon, XCircleIcon, ClipboardCopyIcon } from "@heroicons/react/outline"
+import { CheckCircleIcon, ClipboardCopyIcon } from "@heroicons/react/outline"
 import Render from "#commons/Render"
 export default () => {
+    const inputRef = useRef<HTMLInputElement>(null)
     const [query, setQuery] = useState("")
     const [copied, setCopied] = useState(false)
 
@@ -17,6 +18,10 @@ export default () => {
             }
         }
     }, [copied])
+
+    useEffect(() => {
+        if (inputRef.current) inputRef.current?.focus()
+    }, [inputRef.current])
 
     return (
         <div className="mt-6 w-full">
@@ -44,6 +49,7 @@ export default () => {
                                         type="text"
                                         name="link"
                                         id="link"
+                                        ref={inputRef}
                                         className="block w-full rounded-none rounded-l-md border-0 px-2 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         value={`https://lmagptfy.com/q/?query=${btoa(query)}`}
                                     />
