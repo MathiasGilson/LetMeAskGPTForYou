@@ -27,6 +27,7 @@ export default () => {
         <div className="mt-6 w-full">
             <div className="flex items-center w-full justify-center">
                 <input
+                    ref={inputRef}
                     className="border-2 max-w-xl w-full border-gray-300 bg-white h-16 px-5 pr-16 rounded-lg text-lg focus:outline-none"
                     placeholder="Enter your query here"
                     onChange={(e) => {
@@ -49,7 +50,6 @@ export default () => {
                                         type="text"
                                         name="link"
                                         id="link"
-                                        ref={inputRef}
                                         className="block w-full rounded-none rounded-l-md border-0 px-2 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         value={`https://lmagptfy.com/q/?query=${btoa(query)}`}
                                     />
