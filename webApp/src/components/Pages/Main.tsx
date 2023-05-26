@@ -74,7 +74,9 @@ export default () => {
                             </div>
                         )}
                     </div>
-                    <div className="flex items-center justify-center mt-12">Preview</div>
+                    <div className="flex items-center justify-center mt-12">
+                        Preview of what the tutorial will look like
+                    </div>
                     <div className="h-[560px] -mt-6 overflow-hidden">
                         <Render showSteps={false} query={query} />
                     </div>
